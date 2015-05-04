@@ -61,7 +61,7 @@ public class BackgroundIntent extends IntentService {
         return numbers;
     }
         private void Sort(){
-            int n = 150;
+            int n = 100000;
             int arreglo[] = new int[n];
 
             Random random = new Random();
