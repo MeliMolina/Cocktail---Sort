@@ -60,8 +60,8 @@ public class BackgroundIntent extends IntentService {
         }
         return numbers;
     }
-        private void Sort(){
-            int n = 100000;
+        private void Ordenar(){
+            int n = 10000;
             int arreglo[] = new int[n];
 
             Random random = new Random();
@@ -99,8 +99,9 @@ public class BackgroundIntent extends IntentService {
         try {
 
             long start = System.nanoTime();
-            generarNuevoArreglo();
-            Sort();
+            for(int i = 0; i < 5000;i++){
+                Ordenar();
+            }
             long end = System.nanoTime();
 
             long elapsedTime = end - start;
