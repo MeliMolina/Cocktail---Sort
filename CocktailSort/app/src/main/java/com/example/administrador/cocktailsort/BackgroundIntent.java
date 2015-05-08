@@ -99,7 +99,7 @@ public class BackgroundIntent extends IntentService {
         try {
 
             long start = System.nanoTime();
-            for(int i = 0; i < 5000;i++){
+            for(int i = 0; i < 10000;i++){
                 Ordenar();
             }
             long end = System.nanoTime();
